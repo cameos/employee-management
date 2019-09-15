@@ -1,0 +1,344 @@
+﻿/***************************Sticky Footer**************************************************/
+html {
+}
+
+html, body {
+    /*background-color:#020F1D;*/
+    /*background-color: #f7f7f7;*/
+    background-color: #fff;
+    /*color: #0074ff;*/
+    color: #212121;
+    height: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/*html, body {
+    height: 100%;
+}*/
+
+.page-wrap {
+    min-height: 100%;
+    margin-top: 50px;
+    margin-bottom: -100px;
+}
+
+    .page-wrap:after {
+        content: "";
+        display: block;
+        height: 100px;
+    }
+
+
+.site-footer {
+    background-color: #1D1F27;
+    height: auto;
+    padding: 50px;
+    color: #fff;
+}
+
+/*style the buttons of the site*/
+.ok-btn {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #0074dd;
+    border: 1px solid #0074dd;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 1px;
+}
+
+    .ok-btn:hover {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        background-color: #0074dd;
+        border: 1px solid #0074dd;
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 1px;
+    }
+
+.orange-btn {
+    background-color: #ff6a00;
+    border: 1px solid #ff6a00;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 1px;
+}
+
+    .orange-btn:hover {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        background-color: #ff6a00;
+        border: 1px solid #ff6a00;
+        color: #fff;
+        font-weight: bold;
+        text-decoration: none;
+        border-radius: 1px;
+    }
+
+.fail-btn {
+    background-color: red;
+    border: 1px solid red;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 1px;
+}
+
+    .fail-btn:hover {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        background-color: red;
+        border: 1px solid red;
+        color: #fff;
+        font-weight: bold;
+        text-decoration: none;
+        border-radius: 1px;
+    }
+
+.submit-btn {
+    background-color: #ff006e;
+    border: 1px solid #ff006e;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 1px;
+}
+
+    .submit-btn:hover {
+        background-color: #ff006e;
+        border: 1px solid #ff006e;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        color: #fff;
+        font-weight: bold;
+        text-decoration: none;
+        border-radius: 1px;
+    }
+
+/*modal styling*/
+.modal-body-style{
+    height:auto;
+    overflow:auto;
+
+}
+#acme-welcome-list {
+    display: block;
+    list-style-type: disc;
+}
+
+    #acme-welcome-list li {
+        display: block;
+        padding:5px;
+    }
+
+/*loading animations*/
+.show-for-preloader {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+.hide-for-preloader {
+    display: none;
+}
+.signal-pulsate {
+    background-color: #ff006e;
+    border-radius: 50%;
+    width:30px;
+    height: 30px;
+    margin:10px auto 10px auto;
+    opacity: 0;
+    -moz-animation: pulsate 1s ease-out;
+    -o-animation: pulsate 1s ease-out;
+    -webkit-animation: pulsate 1s ease-out;
+    animation: pulsate 1s ease-out;
+    -moz-animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+@-moz-keyframes pulsate{
+    0% {
+        -moz-transform: scale(.1);
+        -ms-transform: scale(.1);
+        -o-transform: scale(.1);
+        -webkit-transform: scale(.1);
+        transform: scale(.1);
+        opacity: 0.0;
+    }
+    50%{
+        opacity:1;
+    }
+    100% {
+        -moz-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        -o-transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes pulsate{
+    0% {
+        -moz-transform: scale(.1);
+        -ms-transform: scale(.1);
+        -o-transform: scale(.1);
+        -webkit-transform: scale(.1);
+        transform: scale(.1);
+        opacity: 0.0;
+    }
+    50%{
+        opacity:1;
+    }
+    100% {
+        -moz-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        -o-transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+        opacity: 0;
+    }
+}
+
+@keyframes pulsate{
+    0% {
+        -moz-transform: scale(.1);
+        -ms-transform: scale(.1);
+        -o-transform: scale(.1);
+        -webkit-transform: scale(.1);
+        transform: scale(.1);
+        opacity: 0.0;
+    }
+    50%{
+        opacity:1;
+    }
+    100% {
+        -moz-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        -o-transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+        opacity: 0;
+    }
+}
+
+.load-bar{
+    position:relative;
+    margin-top:20px;
+    width:100%;
+    height:7px;
+    background-color:#fdba2c;
+}
+.bar{
+    content:"";
+    display:inline;
+    position:absolute;
+    width:0;
+    height:100%;
+    left:50%;
+    text-align:center;
+}
+    .bar:nth-child(1) {
+        background-color: #da4733;
+        -moz-animation: loading 3s linear infinite;
+        -o-animation: loading 3s linear infinite;
+        -webkit-animation: loading 3s linear infinite;
+        animation: loading 3s linear infinite;
+    }
+    .bar:nth-child(2) {
+        background-color: #3b78e7;
+        -moz-animation: loading 3s linear 1s infinite;
+        -o-animation: loading 3s linear 1s infinite;
+        -webkit-animation: loading 3s linear 1s infinite;
+        animation: loading 3s linear 1s infinite;
+    }
+    .bar:nth-child(3) {
+        background-color: #fdba2c;
+        -moz-animation: loading 3s linear 2s infinite;
+        -o-animation: loading 3s linear 2s infinite;
+        -webkit-animation: loading 3s linear 2s infinite;
+        animation: loading 3s linear 2s infinite;
+    }
+@keyframes loading{
+    from{
+        left:50%;
+        width:0;
+        z-index:100
+    }
+    33.3333%{
+        left:0;
+        width:100%;
+        z-index:10
+    }
+    to{
+        left:0;
+        width:100%;
+    }
+}
+/*controls styling*/
+.text-control-style {
+    border: 1px solid #e5e5e5;
+    border-radius: 2px;
+    box-shadow: none;
+    /*border-bottom: 1px solid #750382;
+    border-bottom-width: thin;
+    border-bottom-color: #750382;*/
+    -moz-transition: border-bottom-width 0.2s linear 0s, border-bottom-color 3s linear 1s, transform 2s linear 1.5s;
+    -o-transition: border-bottom-width 0.2s linear 0s, border-bottom-color 3s linear 1s, transform 2s linear 1.5s;
+    -webkit-transition: border-bottom-width 0.2s linear 0s, border-bottom-color 3s linear 1s, transform 2s linear 1.5s;
+    transition: border-bottom-width 0.2s linear 0s, border-bottom-color 3s linear 1s, transform 2s linear 1.5s;
+    padding: 2px;
+}
+
+    .text-control-style:focus {
+        border-top:none;
+        border-left:none;
+        border-right:none;
+        border-radius: 0;
+        border-bottom-width: thick;
+        border-bottom-color: #F48024;
+        -webkit-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        -moz-transform-origin: bottom center;
+        -ms-transform-origin: bottom center;
+        -o-transform-origin: bottom center;
+        -webkit-transform-origin: bottom center;
+        transform-origin: bottom center;
+        padding: 2px;
+        color: #1393D0;
+        box-shadow: none;
+        outline-style: solid;
+    }
+
+/* styling off all the people in the site*/
+.acme-person-list-show{
+    width:100%;
+    height:100%;
+    margin:0 auto 0 auto;
+    background-color:#fff;
+    /*border-top:1px solid red;*/
+    padding:5px;
+    overflow-y:auto;
+}
+.acme-person-list-show ul{
+    display:block;
+    list-style:none;
+    list-style-type:none;
+    border:1px solid #e5e5e5;
+}
+.acme-person-list-show ul li{
+    display:inline-block;
+    padding:10px;
+    font-weight:bold;  
+}

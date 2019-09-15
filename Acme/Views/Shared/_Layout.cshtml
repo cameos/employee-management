@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Bongani Qunta" />
+    <meta name="description" content="This is employee management site, it maintains employer employee data via web services" />
+    <meta name="keywords" content="Port Elizabeth, cape town, web services, employeer, employee,test, ORM, acme webservices" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+
+<!--Doctor Body-->
+<body>
+    <!--navingation for the site-->
+    <nav class="navbar navbar-default" role="navigation" style="background-color:#fff; border-bottom:1px solid #E5E5E5; color:#0074dd;width:100%;">
+        <div class="navbar-header">
+            <button type="button" id="doctor-nav-btn" class="navbar-toggle" data-toggle="collapse" data-target="#doctor-nav">
+                <span class="sr-only">Toggle Navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="/Home/Welcome" style="color:#0074dd; font-weight:bold;" class="navbar-brand">
+                <img src="~/Content/landscapes/backpack.png" style="display:inline-block; width:30px;height:30px;" class="img-circle" /> <span>Welcome to employee management</span><br />
+            </a>
+        </div>
+
+
+
+        @*<div class="collapse navbar-collapse" id="doctor-nav">
+
+            
+            <ul style="color:#b200ff;" class="nav navbar-nav">
+                <li><a style="color:#ff006e; font-weight:bold;" href="#">Maintain</a></li>
+                <li><a style="color:#ff006e; font-weight:bold;" href="#">Comment</a></li>
+                <li><a style="color:#ff006e; font-weight:bold;" href="#">Help</a></li>
+                
+            </ul>
+        </div>*@
+    </nav>
+
+    <!--body of the site-->
+    <div class="page-wrap">
+        @RenderBody()
+    </div>
+    <br /><br /><br />
+    <!--site body-->
+    <div class="site-footer">
+        <div class="row"> 
+            <div class="col-xs-12 col-sm-12 col-md-4">
+                <div class="text-left" style="color:#ff006e;">
+                    Written by: <a href="mailto:magine20@gmail.com?Subject=Web%Design%Information" target="_blank">Email Bongani Qunta</a>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-4">
+                <div class="text-left" style="color:#ff006e">Social Media Links</div>
+                <ul style="list-style:none;">
+                    <li>Facebook: none</li>
+                    <li><a href="https://twitter.com/magine20" target="_blank">Twitter</a></li>
+                    <li><a href="https://za.linkedin.com/in/bongani-qunta-454b0493" target="_blank">LinkedIn</a></li>
+                    <li><a href="https://hano.portfoliobox.net" target="_blank">Website</a></li>
+                    <li><a href="https://github.com/cameos" target="_blank">Github</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/acme")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
